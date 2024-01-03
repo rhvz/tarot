@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot</title>
+    <link rel="stylesheet" href="tarot.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+    <h1>TAROT</h1>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/TheLovers.jpg/220px-TheLovers.jpg" alt=""
+            id="inicio">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/RWS_Tarot_15_Devil.jpg/220px-RWS_Tarot_15_Devil.jpg"
+            alt="" id="inicio">
+    </div>
+    <div class="text">
+        <h3>Como funciona: </h3>
+        <p>Para tirar cartas e ver o seu futuro próximo, primeiro concentre-se no que você quer saber, na área da vida
+            para
+            qual quer tirar a carta e, após se concentrar nisso, clique no botão  "Tirar cartas". </p>
+        <p>Caso não tenha muita noção do jogo e quiser saber um pouco mais, clique no botão "Saber Mais", ele o
+            levará para uma página que explica um pouco do tarot e como as cartas sairão nesse jogo. <br><br>Para saber mais sobre a carta que saiu para você,  basta clicar com o botão esquerdo em cima dela. Boa sorte!</p>
+
+        <div class="botoes">
+            <button onclick="tirarCarta()">Tirar Carta</button>
+            <a href="./explicacao.html" target="_blank"><button>Saber Mais</button></a>
+        </div>
+    </div>
+
+    <div class="cartaTirada">
+        <img id="cartaImagem1" src="" alt="" class="cartaImagem" onclick="abrirLink(this)">
+        <img id="cartaImagem2" src="" alt="" class="cartaImagem" onclick="abrirLink(this)">
+        <img id="cartaImagem3" src="" alt="" class="cartaImagem" onclick="abrirLink(this)">
+    </div>
+
+    <script src="tarot.js"></script>
+</body>
+
+</html>
